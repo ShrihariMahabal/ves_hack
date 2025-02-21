@@ -107,7 +107,7 @@ export default function Pages(props) {
         <Portal containerRef={navRef}>
           <AuthNavbar
             secondary={getActiveNavbar(routes)}
-            logoText='EcoSphere'
+            logoText='ECOSPHERE: THE GREENFUND CONNECT'
           />
         </Portal>
         <Box w='100%'>

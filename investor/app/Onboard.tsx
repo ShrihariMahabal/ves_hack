@@ -52,7 +52,7 @@ const Onboard = () => {
             });
             console.log("Response", response);
             
-            router.push('/home')
+            
             
             // if (!response.ok) throw new Error("Failed to send OTP");
     
@@ -61,6 +61,9 @@ const Onboard = () => {
         } catch (error) {
             Alert.alert("Error", "Failed to send OTP. Please try again.");
             console.error("OTP Error:", error);
+        }
+        finally{
+            router.push('/home')
         }
     };
     

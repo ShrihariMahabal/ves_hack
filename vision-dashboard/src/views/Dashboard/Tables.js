@@ -148,7 +148,7 @@ const avgContribution = backersThisYear > 0 ? (totalRaised / backersThisYear).to
 									Founder Trust Rating
 								</StatLabel>
 								<Flex>
-									<StatNumber fontSize='lg' color='#fff'>4.7/5</StatNumber>
+									<StatNumber fontSize='lg' color='#fff'>3.7/5</StatNumber>
 								</Flex>
 							</Stat>
 							<IconBox as='box' h={'45px'} w={'45px'} bg='brand.200'>

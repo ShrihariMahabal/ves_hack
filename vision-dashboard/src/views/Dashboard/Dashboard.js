@@ -413,7 +413,7 @@ John: Sounds good. Let’s set a deadline for next week and track progress daily
 											Founder Rating
 										</Text>
 										<Text fontSize="2xl" fontWeight="bold" color="green.400">
-											⭐ 4.7 / 5
+											⭐ 3.7 / 5
 										</Text>
 									</Flex>
 
@@ -694,21 +694,16 @@ John: Sounds good. Let’s set a deadline for next week and track progress daily
 											<Flex gap={6}>
 												{/* Left: Video Player */}
 												<Box flex="1" position="relative" borderRadius="10px" overflow="hidden">
-													<video
-														style={{
-															width: "100%",
-															height: "95%", // Ensures it takes full height
-															minHeight: "200px", // Sets a minimum height
-															borderRadius: "10px",
-															cursor: "pointer",
-															objectFit: "cover", // Prevents stretching
-														}}
-														controls
-														poster="https://via.placeholder.com/640x360.png?text=Meeting+Recording"
-													>
-														<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-														Your browser does not support the video tag.
-													</video>
+												<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/c-_VeXhHnIg?controls=0&modestbranding=1&showinfo=0&rel=0&autohide=1"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+//   allowfullscreen
+></iframe>
+
 												</Box>
 
 												{/* Right: Sentiment & Summary */}
