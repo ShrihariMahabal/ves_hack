@@ -6,12 +6,16 @@ import subprocess
 import os
 from flask_cors import CORS
 import ollama  # Import Ollama for local Llama 3 model
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Configure Gemini API (Replace with your API key)
-genai.configure(api_key="AIzaSyDWA90uavyhbXY6aJwJc0Vpp2ubF1P0LgY")
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=GEMINI_API_KEY)
 
 def extract_audio(video_path, audio_path="output_audio.wav"):
     """Extracts audio from video using ffmpeg."""
