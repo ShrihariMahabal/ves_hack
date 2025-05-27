@@ -11,10 +11,13 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import json
+import os
+from dotenv import load_dotenv
 
 # Configure Gemini AI API
-API_KEY = os.getenv("GEMINI_API_KEY")  # Use environment variable for security
-genai.configure(api_key="AIzaSyBBG-TgsliG_sRCGqNWcQ02SwRID9WR7Tg")
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel(model_name='gemini-1.5-pro')
 
 # Initialize Flask app
